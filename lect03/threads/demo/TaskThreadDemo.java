@@ -21,8 +21,8 @@ public class TaskThreadDemo {
 
 // The task for printing a specified character in specified times
 class PrintChar implements Runnable {
-	private char charToPrint; // The character to print
-	private int times; // The times to repeat
+	public char charToPrint; // The character to print
+	public int times; // The times to repeat
 
 	/**
 	 * Construct a task with specified character and number of times to print the
@@ -45,7 +45,7 @@ class PrintChar implements Runnable {
 
 // The task class for printing number from 1 to n for a given n
 class PrintNum implements Runnable {
-	private int lastNum;
+	public int lastNum;
 
 	/** Construct a task for printing 1, 2, ... i */
 	public PrintNum(int n) {

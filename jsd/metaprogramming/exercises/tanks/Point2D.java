@@ -1,8 +1,8 @@
 package jsd.metaprogramming.exercises.tanks;
 
 public class Point2D {
-    private int x;
-    private int y;
+    public int x;
+    public int y;
     public Point2D(int x, int y) throws Exception {
 
         // TODO: Catch exceptions (validations)

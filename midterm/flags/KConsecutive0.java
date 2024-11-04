@@ -4,13 +4,13 @@ import java.io.*;
 import java.util.*;
 
 public class KConsecutive0 {
-	private static List<String> generateBinaryStrings(int N, int K) {
+	public static List<String> generateBinaryStrings(int N, int K) {
 		List<String> result = new ArrayList<>();
 		backtrack(result, new StringBuilder(), N, K, 0, 0);
 		return result;
 	}
 
-	private static void backtrack(List<String> result, StringBuilder sb, int N, int K, int start, int count) {
+	public static void backtrack(List<String> result, StringBuilder sb, int N, int K, int start, int count) {
 		if (sb.length() == N) {
 			if (count == K) {
 				result.add(sb.toString());
@@ -27,7 +27,7 @@ public class KConsecutive0 {
 		}
 	}
 
-	private static void writeToFile(List<String> binaryStrings, String filename) throws IOException {
+	public static void writeToFile(List<String> binaryStrings, String filename) throws IOException {
 		try (BufferedWriter writer = new BufferedWriter(new FileWriter(filename))) {
 			writer.write(binaryStrings.size() + "\n");
 			for (String binaryString : binaryStrings) {

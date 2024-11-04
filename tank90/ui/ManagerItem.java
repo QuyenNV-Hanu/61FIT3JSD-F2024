@@ -15,8 +15,8 @@ import java.util.ArrayList;
  * Created by ducnd on 24/10/2016.
  */
 public class ManagerItem {
-    private ArrayList<Item> items;
-    private MyTank myTank;
+    public ArrayList<Item> items;
+    public MyTank myTank;
     long currentTimeFireMyTank = 0;
     ArrayList<EnemyTank> enemyTanks;
     long currentMoveEnemy;
@@ -105,7 +105,7 @@ public class ManagerItem {
     	}
     }
 
-    private void readFile() {
+    public void readFile() {
         String path = getClass().getResource("/map/map1.txt")
                 .getPath();
         path = path.replaceAll("%20", " ");

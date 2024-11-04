@@ -4,7 +4,7 @@ import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 
 public class GenericLogger implements InvocationHandler {
-	private Object target;
+	public Object target;
 
 	public GenericLogger(Object target) {
 		this.target = target;

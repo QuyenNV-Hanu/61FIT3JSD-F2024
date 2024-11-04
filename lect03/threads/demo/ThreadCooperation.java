@@ -4,7 +4,7 @@ import java.util.concurrent.*;
 import java.util.concurrent.locks.*;
 
 public class ThreadCooperation {
-	private static Account account = new Account();
+	public static Account account = new Account();
 
 	public static void main(String[] args) {
 		// Create a thread pool with two threads
@@ -40,14 +40,14 @@ public class ThreadCooperation {
 	}
 
 	// An inner class for account
-	private static class Account {
+	public static class Account {
 		// Create a new lock
-		private static Lock lock = new ReentrantLock();
+		public static Lock lock = new ReentrantLock();
 
 		// Create a condition
-		private static Condition newDeposit = lock.newCondition();
+		public static Condition newDeposit = lock.newCondition();
 
-		private int balance = 0;
+		public int balance = 0;
 
 		public int getBalance() {
 			return balance;

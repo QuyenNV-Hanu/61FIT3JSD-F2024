@@ -1,7 +1,7 @@
 package jsd.metaprogramming.exercises.tanks;
 
 public class BasicTank extends EnemyTank{
-    private Directions direction;
+    public Directions direction;
     public BasicTank(Point2D position) throws Exception {
         super("Basic Tank", position, 100, 1, 1, 1, "Desc");
         this.direction = Directions.DOWN;

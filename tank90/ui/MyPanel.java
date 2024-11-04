@@ -11,13 +11,13 @@ import java.awt.event.KeyEvent;
  * Created by ducnd on 24/10/2016.
  */
 public class MyPanel extends JPanel implements Runnable {
-    private ManagerItem managerItem;
-    private Thread thread;
-    private boolean isLeft;
-    private boolean isRight;
-    private boolean isUp;
-    private boolean isDown;
-    private boolean isFire;
+    public ManagerItem managerItem;
+    public Thread thread;
+    public boolean isLeft;
+    public boolean isRight;
+    public boolean isUp;
+    public boolean isDown;
+    public boolean isFire;
 
     public MyPanel() {
         ///
@@ -133,7 +133,7 @@ public class MyPanel extends JPanel implements Runnable {
        
     }
     
-    private void moveBulletOfTank() {
+    public void moveBulletOfTank() {
 		managerItem.moveBulletOfMyTank();
 		
 	}

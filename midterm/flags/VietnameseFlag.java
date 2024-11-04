@@ -22,7 +22,7 @@ public class VietnameseFlag extends JPanel {
 		g.setColor(new Color(255, 255, 0));
 		g.fill(shape);
 	}
-	private Path2D createDefaultStar(double radius, double centerX, double centerY) {
+	public Path2D createDefaultStar(double radius, double centerX, double centerY) {
 		return null;
 	}
 	

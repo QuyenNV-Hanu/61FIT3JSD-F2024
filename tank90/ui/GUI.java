@@ -34,7 +34,7 @@ public class GUI extends JFrame{
 
     }
 
-    private void init() {
+    public void init() {
         myPanel = new MyPanel();
         add(myPanel);
     }

@@ -2,7 +2,7 @@ package jsd.metaprogramming.exercises.assessments.tanks;
 
 public class TankInspector {
 	@SuppressWarnings({ "rawtypes" })
-	private Class tankClass;
+	public Class tankClass;
 
 	public TankInspector() throws ClassNotFoundException {
 		this.tankClass = Class.forName("jsd.metaprogramming.exercises.tanks.Tank");

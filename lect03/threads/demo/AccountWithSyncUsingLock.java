@@ -4,7 +4,7 @@ import java.util.concurrent.*;
 import java.util.concurrent.locks.*;
 
 public class AccountWithSyncUsingLock {
-	private static Account account = new Account();
+	public static Account account = new Account();
 
 	public static void main(String[] args) {
 		ExecutorService executor = Executors.newCachedThreadPool();
@@ -32,8 +32,8 @@ public class AccountWithSyncUsingLock {
 
 	// An inner class for account
 	public static class Account {
-		private static Lock lock = new ReentrantLock(); // Create a lock
-		private int balance = 0;
+		public static Lock lock = new ReentrantLock(); // Create a lock
+		public int balance = 0;
 
 		public int getBalance() {
 			return balance;

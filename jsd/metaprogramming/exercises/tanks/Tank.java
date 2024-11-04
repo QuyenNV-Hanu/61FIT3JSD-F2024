@@ -1,16 +1,16 @@
 package jsd.metaprogramming.exercises.tanks;
 
 public abstract class Tank extends TankFunction {
-    private String name;
-    private Point2D position;
-    private Directions direction;
-    private int point;
-    private int health;
-    private int movementSpeed;
-    private int bulletSpeed;
-    private int life;
-    private String description;
-    private int bullet;
+    public String name;
+    public Point2D position;
+    public Directions direction;
+    public int point;
+    public int health;
+    public int movementSpeed;
+    public int bulletSpeed;
+    public int life;
+    public String description;
+    public int bullet;
     public Tank(String name, Point2D position, int point, int health, int movementSpeed, int bulletSpeed,
                 String description) throws Exception {
         if(!isValidName(name)) {
@@ -116,7 +116,7 @@ public abstract class Tank extends TankFunction {
         this.bullet = bullet;
     }
 
-    private boolean isValidPosition(Point2D position2) {
+    public boolean isValidPosition(Point2D position2) {
         // TODO Auto-generated method stub
         int minX = 1;
         int maxX = 100;
@@ -131,7 +131,7 @@ public abstract class Tank extends TankFunction {
         }
         return true;
     }
-    private boolean isValidName(String name) {
+    public boolean isValidName(String name) {
         if(name == null){
             return false;
         }
